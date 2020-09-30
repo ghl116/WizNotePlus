@@ -184,6 +184,7 @@ QString WizPathResolve::logFile()
 
 QString WizPathResolve::tempPath()
 {
+    //mark 获取系统临时目录，并建立/WizNote目录
     QString path = QDir::tempPath() + "/WizNote/";
 
     ensurePathExists(path);
